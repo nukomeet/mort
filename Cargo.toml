@@ -1,0 +1,22 @@
+[package]
+name = "mort"
+version = "0.0.1"
+description = "Next-gen deploy tool"
+license = "MIT"
+repository = "https://github.com/nukomeet/mort"
+authors = [
+  "Łukasz Niemier <lukasz@niemier.pl>",
+  "Nukomeet <bonjour@nukomeet.com>"
+]
+
+[lib]
+name = "mort"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mort"
+path = "src/main.rs"
+
+[dependencies]
+docopt = "*"
+rustc-serialize = "*"
